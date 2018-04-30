@@ -1,0 +1,290 @@
+body { padding-top:30px; }
+div#excel {
+    border: 1px solid blue;
+    width: 50%;
+    margin: 0 auto;
+}
+.upload {
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+.table-upload {
+    border: 1px solid green;
+}
+.btn-add {
+    margin-top: 24px;
+}
+.text-right {
+	text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+.edit-delete {
+    margin-top: -5px;
+}
+.float-right {
+	float: right !important;
+}
+.btn-add-table {
+    margin-top: 24px;
+    margin-right: 13px;
+}
+
+/********************/
+.left-table {
+    border: 1px solid blue;
+}
+.right-table {
+    border: 1px solid red;
+}
+.left-btn {
+    background: green;
+}
+.left-data {
+    border-top: 1px solid white;
+}
+.left-table {
+    border: 1px solid blue;
+    background: black;
+    color: white;
+}
+.blue-back {
+    background: blue;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.todo-main {
+    margin-top: 10px;
+}
+.todo-add {
+    margin-top: 10px;
+}
+
+/*select Box customization*/
+
+select#soflow, select#soflow-color {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    background: url(/images/arrow.png);
+    background-position: 102% center;
+    background-repeat: no-repeat;
+    border: 1px solid #e9eff4;
+    background-color: #ffffff;
+    color: #323c47;
+    font-size: inherit;
+    width:100%;
+    overflow: hidden;
+    padding: 8px 13px;
+    line-height: 1.4615384615384615;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+select.soflow, select.soflow-color {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    background: url(/images/arrow.png);
+    background-position: 102% center;
+    background-repeat: no-repeat;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    color: #323c47;
+    font-size: inherit;
+    width: 100%;
+    overflow: hidden;
+    padding: 8px 13px;
+    line-height: 1.21111;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/*form-group change*/
+.form-control-box {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 13px;
+    line-height: 1.4615384615384615;
+    color: #3d414a;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #e1e3e8;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/*combo box*/
+label.dropdown select {
+    padding: 10px 42px 10px 10px;
+    background: #f8f8f8;
+    color: #444;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+}
+label.dropdown select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #444;
+}
+label.dropdown select::-ms-expand {
+    display: none;
+}
+label.dropdown:before {
+    content: '';
+    right: 5px;
+    top: 4px;
+    width: 30px;
+    height: 33px;
+    background: #f8f8f8;
+    position: absolute;
+    pointer-events: none;
+    display: block;
+}
+label.dropdown { position: relative; }
+label.dropdown:after {
+    content: '>';
+    color: #444;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 2px;
+    top: 8px;
+    border-bottom: 1px solid #aaa;
+    position: absolute;
+    pointer-events: none;
+    width: 34px;
+    padding: 0 0 5px 0;
+    text-indent: 14px;
+}
+@media screen\0 {
+    label.dropdown:after {
+        width: 38px;
+        text-indent: 15px;
+        right: 0;
+    }
+}
+@media screen and (min--moz-device-pixel-ratio:0) {
+    label.dropdown select { padding-right: 40px; }
+    label.dropdown:before { right: 6px; }
+    label.dropdown:after {
+        text-indent: 14px;
+        right: 6px;
+        top: -5px;
+        width: 36px;
+    }
+}
+button.btn.btn-info.add-btn {
+    padding: 8px 70px 7px 70px;
+    font-size: 17px;
+}
+.add-main {
+    margin-top: 10px;
+    text-align: center;
+}
+.input-lg {
+    height: 35px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10;
+}

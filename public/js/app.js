@@ -1,0 +1,1 @@
+angular.module('sampleApp', ['ngRoute', '720kb.datepicker', 'appRoutes','MainCtrl', 'NerdCtrl', 'NerdService', 'GeekCtrl','todoCtrl', 'GeekService']);

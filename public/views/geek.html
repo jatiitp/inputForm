@@ -1,0 +1,66 @@
+<div id="snackbar">{{snackHead}}</div>
+<div class="" >
+  	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 table-upload" ng-if="!isEdit">
+	    <div class="table-responsive">
+	      <table id="myTable" class="table">
+	        <thead>
+	          <tr>
+	            <th>First Name</th>
+	            <th>Last Name</th>
+	            <th>Designation name</th>
+	            <th>Age</th>
+	            <th>Actions</th>
+	          </tr>
+	        </thead>
+
+	        <tbody>
+	          <tr ng-repeat="item in employeeList track by $index" ng-if="!isEdit">
+	            <td>{{item.data.firstName}}</td>
+	            <td>{{item.data.lastName}}</td>
+	            <td>{{item.data.designation}}</td>
+	            <td>{{item.data.age}}</td>
+	            <td>
+	               <div class="edit-delete">
+	                    <div class="btn " ng-click="edit($index)">Edit</div>
+	                    <div class="btn " ng-click="delete($index)">Delete</div>
+	                </div>
+	            </td>
+	          </tr>
+	        </tbody>
+	      </table>
+	    </div>
+  	</div>
+  	<div class="container" ng-if="isEdit">
+	    <div>Edit Employee Details</div>
+	    <div class="col-lg-12">
+	        <div class="col-lg-6 input-data">
+	            <label class="input-name">First Name</label>
+	            <input id="Name" ng-model="employeeData.firstName" placeholder="First Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
+	        </div>
+	        <div class="col-lg-6 input-data">
+	            <label class="input-name">Last Name</label>
+	            <input id="Name" ng-model="employeeData.lastName" placeholder="Last Name" type="text" ng-pattern ="/^[a-zA-Z\s]*$/" class="form-control"   aria-required="true" aria-invalid="false" >
+	        </div>
+	        <div class="form-group col-md-6">
+	            <label class="control-label">Designation</label>
+	            <div class="inputBox">
+	                <select class="soflow" ng-model="employeeData.designation">
+	                    <option value="Assistant Manager">Assistant Manager</option>
+	                    <option value="Manager">Manager</option>
+	                    <option value="Software Engineer">Software Engineer</option>
+	                </select>
+	            </div>
+	        </div>
+	        <div class="col-lg-6 input-data">
+	            <label class="input-name">Age</label>
+	            <input id="Name" ng-model="employeeData.age" placeholder="Age" class="form-control"   aria-required="true" aria-invalid="false" >
+	        </div>
+	        <div class="col-lg-12 add-main">
+	            <div class="">
+	                <button class="btn btn-info add-btn" ng-click="save(employeeData)">Save</button>
+	                <button class="btn btn-info add-btn" ng-click="cancel(employeeData)">Cancel</button>
+	            </div>
+	        </div>
+	    </div>
+  </div>
+</div>
