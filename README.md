@@ -1,2 +1,2 @@
 # inputForm
-Testing Url : vinodjat.com:8084
+Testing Url : http://vinodjat.com:8084/
