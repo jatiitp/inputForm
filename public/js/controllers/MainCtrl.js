@@ -1,5 +1,5 @@
 angular.module('MainCtrl', []).controller('MainController', function($scope) {
 
-	$scope.tagline = 'Welcome to Shadowfax';	
+	$scope.tagline = 'Welcome to The Jungle';	
 
 });
