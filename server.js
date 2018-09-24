@@ -6,7 +6,7 @@ var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 
 // configuration ===========================================
-var port = process.env.PORT || 8084; // set our port
+var portNumber = process.env.PORT || 8084; // set our port
 
 // config files
 // var db = require('./config/db');
